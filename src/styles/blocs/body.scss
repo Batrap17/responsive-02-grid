@@ -3,4 +3,10 @@ body {
     grid-auto-rows: 150px;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap:5px;
+
+
+    @include large {
+        grid-template-columns: repeat(18, minmax(80px, 100px));
+        grid-template-rows: repeat(5, 150px);
+    }
 }
