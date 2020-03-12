@@ -4,3 +4,15 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@for $i from 1 through 7 {
+    article[data-period="#{$i}"] {
+        grid-row: $i;
+    }
+}
+
+@for $j from 1 through 18 {
+    article[data-group="#{$j}"] {
+        grid-column: $j;
+    }
+}
